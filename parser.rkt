@@ -23,6 +23,7 @@
        [(#\-) (decorate '(minus) 1)]
        [(#\,) (decorate '(comma) 1)]
        [(#\.) (decorate '(period) 1)]
+       ;;[(#\!) (decorate '(bang) 1)]
        [(#\[)
         ;; The slightly messy case is bracket.  We keep reading
         ;; a list of exprs, and then construct a wrapping bracket
@@ -45,7 +46,7 @@
     [(char=? peeked-char #\])
      (read-char in)
      empty]
-    [(member peeked-char (list #\< #\> #\+ #\- #\, #\. #\[))
+    [(member peeked-char (list #\< #\> #\+ #\- #\, #\. #\[ #\!))
      (cons (parse-expr source-name in)
            (parse-exprs source-name in))]
     [else
