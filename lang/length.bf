@@ -5,5 +5,5 @@
 ++++++++ ++++++++ ++++++++ ++++++++.	Increment to space and print
 >++++++++++ ++++++++++ ++++++++++ ++++++++++ +++++++. Increment to 0 plus count and print
 
-!Blob
+!Oh self
 
